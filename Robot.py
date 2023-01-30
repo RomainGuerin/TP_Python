@@ -14,5 +14,11 @@ class Robot(Bipede):
     def reparer(self, requete, humain):
         print(f"{self.nom} répare à la demande de {humain.nom} : '{requete}'")
 
+    def getId(self):
+        return self.id
+
+    def getTache(self):
+        return self.tache
+
     def __str__(self):
         return (f"Robot n°{self.id} ({self.sexe})\nNom d'usage : {self.nom}\nFabriqué par : {self.marque}\n")
