@@ -10,6 +10,9 @@ class Bipede():
     def marcher(self, x, y):
         print(f"Je vais me déplacer en (X : {x}, Y : {y}).")
 
+    def getNom(self):
+        return self.nom
+
     def __str__(self):
         return (f"{self.nom} ({self.sexe}) et il est {self.caractere}.")
 
