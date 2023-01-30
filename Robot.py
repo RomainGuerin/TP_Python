@@ -20,5 +20,8 @@ class Robot(Bipede):
     def getTache(self):
         return self.tache
 
+    def setTache(self, tache):
+        self.tache = tache
+
     def __str__(self):
         return (f"Robot n°{self.id} ({self.sexe})\nNom d'usage : {self.nom}\nFabriqué par : {self.marque}\n")
